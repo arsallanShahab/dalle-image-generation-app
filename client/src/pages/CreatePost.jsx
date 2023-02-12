@@ -72,7 +72,7 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto pb-20">
       <div className="">
-        <h1 className="font-extrabold max-w-3xl pt-20 text-[32px] text-7xl text-[#222328]">
+        <h1 className="font-extrabold max-w-3xl text-[32px] text-4xl pt-20 text-[32px] text-7xl text-[#222328]">
           Create a new masterpiece
         </h1>
         <p className="mt-2 text-[#666e75] text-[16px] max-w-[500px]">
@@ -80,7 +80,7 @@ const CreatePost = () => {
           share them with the community
         </p>
       </div>
-      <form className="mt-16 flex flex-row gap-5">
+      <form className="mt-16 flex flex-col sm:flex-row gap-10">
         <div className="flex-1 flex flex-col gap-8">
           <FormField
             labelName="Your name"

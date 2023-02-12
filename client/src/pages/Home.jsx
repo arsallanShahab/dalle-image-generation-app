@@ -61,7 +61,7 @@ const Home = () => {
 
   return (
     <section className="max-w-7xl mx-auto">
-      <h1 className="font-extrabold max-w-3xl pt-20 font-poppins text-[32px] text-7xl text-[#222328]">
+      <h1 className="font-extrabold max-w-3xl pt-20 font-poppins text-[32px] text-4xl sm:text-7xl text-[#222328]">
         The Community Showcase
       </h1>
       <p className="mt-2 text-[#666e75] text-[16px] max-w-[500px]">
@@ -91,7 +91,7 @@ const Home = () => {
                 <span className="text-[#222328]">{textSearch}</span>
               </h2>
             )}
-            <div className="grid lg:grid-cols-4 pb-20 pt-12 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
+            <div className="grid lg:grid-cols-4 pb-20 pt-12 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-7">
               {textSearch ? (
                 <RenderCards
                   data={searchedResults}
