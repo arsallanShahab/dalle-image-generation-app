@@ -1,8 +1,0 @@
-[build]
-  base = "client/"
-  command = "npm run build"
-  publish = "public"
-
-[functions]
-  base="netlify-server/"
-  directory = "/netlify/functions"
