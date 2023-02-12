@@ -1,13 +1,7 @@
 # example netlify.toml
 [build]
   command = "cd client && npm run build"
-  functions = "netlify-server/netlify/functions"
   publish = "public"
 
 [functions]
-  node_bundler = "esbuild" 
-  external_node_modules = ["mongodb"]
-  external_node_modules = ["cors"]
-  external_node_modules = ["express"]
-  external_node_modules = ["serverless-http"]
-  included_files = ["routes/*.js","mongodb/**/**.js"]
+  directory = "netlify-server/netlify/functions"
