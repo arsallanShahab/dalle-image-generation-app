@@ -4,4 +4,5 @@
   publish = "public"
 
 [functions]
-  directory = "netlify-server/netlify/functions"
+  base="netlify-server/"
+  directory = "/netlify/functions"
