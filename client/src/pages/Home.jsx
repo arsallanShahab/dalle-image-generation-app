@@ -23,10 +23,13 @@ const Home = () => {
     const fetchAllPost = async () => {
       try {
         setLoading(true);
-        const res = await fetch("http://localhost:7171/api/v1/post", {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        });
+        const res = await fetch(
+          "https://dalle-netlify-server.netlify.app/.netlify/functions/index/api/v1/post",
+          {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+          }
+        );
         if (res.ok) {
           const result = await res.json();
           setAllPost(result.data.reverse());
@@ -88,7 +91,7 @@ const Home = () => {
                 <span className="text-[#222328]">{textSearch}</span>
               </h2>
             )}
-            <div className="grid lg:grid-cols-4 py-20 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
+            <div className="grid lg:grid-cols-4 pb-20 pt-12 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
               {textSearch ? (
                 <RenderCards
                   data={searchedResults}
