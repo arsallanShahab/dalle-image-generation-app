@@ -12,6 +12,11 @@ body {
   font-family: poppins, sans-serif;
 }
 
+.shadow-inset {
+  box-shadow: inset 0px 1px 0 0px rgb(0 0 0 / 0%),
+    inset 0 0 2px 0px rgb(0 0 0 / 15%);
+}
+
 @media screen and (min-width: 480px) {
   .card:nth-child(7n + 1) {
     grid-column: auto/span 2;

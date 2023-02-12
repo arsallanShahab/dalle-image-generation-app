@@ -88,7 +88,7 @@ const Home = () => {
                 <span className="text-[#222328]">{textSearch}</span>
               </h2>
             )}
-            <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
+            <div className="grid lg:grid-cols-4 py-20 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
               {textSearch ? (
                 <RenderCards
                   data={searchedResults}

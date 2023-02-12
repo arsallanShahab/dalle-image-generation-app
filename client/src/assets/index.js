@@ -1,9 +1,6 @@
-import download from './download.png';
-import logo from './logo.svg';
-import preview from './preview.png';
+import arrowDown from "./arrow-down.svg";
+import download from "./download.png";
+import logo from "./logo.svg";
+import preview from "./preview.png";
 
-export {
-  download,
-  logo,
-  preview,
-};
+export { download, logo, preview, arrowDown };
