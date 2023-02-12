@@ -9,17 +9,14 @@ captivating images. The project showcases the capabilities of this advanced AI s
 
 ### the frontend
 
-`
-
-    cd client && npm run dev
-
-`
+```html
+cd client && npm run dev
+```
 
 ### the backend
 
-`
+```html
+cd server && npm run start
+```
 
-    cd server && npm run start
-
-`
 **_dont forget to provide the .env file with the api keys_**
